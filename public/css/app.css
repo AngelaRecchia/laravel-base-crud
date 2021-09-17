@@ -12164,19 +12164,28 @@ fieldset:disabled .btn {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 a,
 a:active,
 a:visited {
   color: inherit;
-  text-transform: none;
+  text-decoration: none;
 }
 
 a :hover,
 a:active :hover,
 a:visited :hover {
   color: #c4c4c4;
+}
+
+label,
+h1,
+.h1,
+h2,
+.h2 {
+  color: white;
 }
 
 .icon:hover {
@@ -12187,13 +12196,14 @@ a:visited :hover {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 a,
 a:active,
 a:visited {
   color: inherit;
-  text-transform: none;
+  text-decoration: none;
 }
 
 a :hover,
@@ -12202,11 +12212,24 @@ a:visited :hover {
   color: #c4c4c4;
 }
 
+label,
+h1,
+.h1,
+h2,
+.h2 {
+  color: white;
+}
+
 .icon:hover {
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
+body {
+  background-color: #212529;
+}
+
 .icon {
+  font-size: 15px;
   width: 40px;
   height: 40px;
   display: flex;
@@ -12218,21 +12241,17 @@ a:visited :hover {
   border-radius: 50%;
 }
 
-.icon svg {
-  height: 20px;
-  width: 20px;
-  margin-top: -5px;
-}
-
-.create {
+.create,
+.back {
+  font-size: 30px;
   width: 70px;
   height: 70px;
 }
 
-.create svg {
-  height: 40px;
-  width: 40px;
-  margin-top: -5px;
+.back {
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
 #row-add {
@@ -12242,5 +12261,28 @@ a:visited :hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.author {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.year {
+  font-style: italic;
+}
+
+.poster {
+  height: 100vh;
+}
+
+.right {
+  text-align: right;
+}
+
+blockquote {
+  max-height: 300px;
+  overflow-y: auto;
 }
 

@@ -1,10 +1,10 @@
 @import 'partials/commons';
+body {
+    background-color: #212529;
+}
+
 .icon {
-    svg {
-        height: 20px;
-        width: 20px;
-        margin-top: -5px;
-    }
+    font-size: 15px;
     width: 40px;
     height: 40px;
     display: flex;
@@ -14,18 +14,18 @@
     background-color:rgba(black, 0.6);
     margin: 5px;
     border-radius: 50%;
-
-    
 }
 
-.create {
-        svg {
-            height: 40px;
-            width: 40px;
-            margin-top: -5px;
-        }
+.create, .back {
+        font-size: 30px;
         width: 70px;
         height: 70px;
+}
+
+.back {
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
 
 #row-add {
@@ -35,4 +35,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.author {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.year {
+    font-style: italic;
+}
+
+.poster {
+    height: 100vh;
+}
+
+.right {
+    text-align: right;
+}
+
+blockquote {
+    max-height: 300px;
+    overflow-y: auto;
 }
